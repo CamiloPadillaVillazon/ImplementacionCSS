@@ -15,3 +15,20 @@
     height: 150px;
     background-color: hsl(330, 82%, 70%);
 }
+
+#foo{
+    color: orange;
+}
+
+
+a[title]{
+    color: white;
+}
+
+input:disabled{
+    border: 2px solid orange;
+}
+
+button:hover{
+    background-color: purple;
+}
