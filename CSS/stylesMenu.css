@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo del encabezado */
+h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Contenedor principal */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 350px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+/* Estilo de los elementos de la lista */
+li {
+    margin: 20px 0;
+}
+
+/* Estilo de los enlaces */
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 15px 30px;
+    display: inline-block;
+    background: linear-gradient(135deg, #4A90E2 0%, #4AC29A 100%);
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de luz al pasar el ratón */
+a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.75s ease;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0.1);
+}
+
+a:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+a:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+a:active {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    ul {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}

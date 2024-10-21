@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .contenedor-flexible{
+            background-color: grey;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 700px;
+            align-content: flex-start;
+        }
+        .elemento-flexible{
+            color: white;
+            font-size: 2rem;
+
+        }
+        .uno{
+            background-color: goldenrod;
+            height: 200px;
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            
+        }
+        .dos, .seis{
+            background-color: aqua;
+            height: 200px;
+            flex-basis: 200px;
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+        .tres{
+            background-color: darkgreen;
+            height: 200px;
+            flex-basis: 200px;
+            flex-grow: 3; /*Espacio que el div ocupa en pantalla*/
+            flex-shrink: 1;
+        }
+        .cuatro, .siete{
+            background-color: burlywood;
+            height: 120px;
+            flex-basis: 120px;
+        }
+        .cinco, .ocho{
+            background-color: lightgreen;
+            height: 75px; 
+            flex-basis: 75px;
+        }
+        
+        .fondo{
+            display: flex;
+            height: 100vh;
+        }
+        .caja1{
+            background-color: red;
+            height: 100vh;
+            flex-basis:100%;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .caja2{
+            height: 100vh;
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 1; 
+        }
+        .caja3{
+            background-color: blue;
+            height: 50vh;
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 1; 
+        }
+        .caja4{
+            background-color: green;
+            height: 50vh;
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 1; 
+        }
+        .precio{
+            background-color: white;
+            color: black;
+            display: flex;
+            border-radius: 20px;
+            width: 45px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-items: center;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="contenedor-flexible">
+        <div class="elemento-flexible uno">1</div>
+        <div class="elemento-flexible dos">2</div>
+        <div class="elemento-flexible tres">3</div>
+        <div class="elemento-flexible cuatro">4</div>
+        <div class="elemento-flexible cinco">5</div>
+        <div class="elemento-flexible seis">6</div>
+        <div class="elemento-flexible siete">7</div>
+        <div class="elemento-flexible ocho">8</div> 
+
+    </div> -->
+
+
+    <div class="fondo">
+        <div class="elemento caja1">
+            <div class="precio">
+                only<br>$17
+            </div>
+            <div class="oferta"></div>
+            <div class="nombre-plato"></div>
+            <div class="ordenar"></div>
+        </div>
+        <div class="caja2">
+            <div class="elemento caja3">2
+                <div class="precio"></div>
+                <div class="oferta"></div>
+                <div class="nombre-plato"></div>
+                <div class="ordenar"></div>
+            </div>
+            <div class="elemento caja4">3
+                <div class="precio"></div>
+                <div class="oferta"></div>
+                <div class="nombre-plato"></div>
+                <div class="ordenar"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
